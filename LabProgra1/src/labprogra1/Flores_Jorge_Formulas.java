@@ -10,6 +10,10 @@ package labprogra1;
  */
 public class Flores_Jorge_Formulas {
     public static void main(String[] args) {
-   
+   double A = ((3.0/2)+(4.0/3));
+        System.out.println("Ejercicio a es"+A);
+        
+        System.out.println(""+B);
+        
 }
 }
