@@ -10,6 +10,6 @@ package labprogra1;
  */
 public class Flores_Jorge_Clics {
     public static void main(String[] args) {
-    
+        System.out.println("");
 }
 }
