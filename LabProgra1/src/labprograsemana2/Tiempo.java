@@ -13,10 +13,12 @@ public class Tiempo {
        Scanner sc  = new Scanner (System.in);
        System.out.println("Ingrese la cantidad de segundos en numeros enteros:");
        double segundos = sc.nextDouble();
+       String mensaje = (segundos<=0) ? "Valor no permitido" : "Valor permitido";
+       System.out.println(""+mensaje);
        if (segundos <=0){
-           System.out.println("Valor no permitido");
            System.exit(1);
        }
+           
        if (segundos<=59){
            System.out.println("El tiempos es: "+segundos+" segundos");
        }
