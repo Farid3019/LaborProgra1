@@ -23,7 +23,7 @@ public class Flores_Jorge_Clics {
         double promedio = op1 + op2 + op3;
         double isv = promedio *0.16;
         double total = promedio + isv;
-        System.out.println("Su total es: "+promedio);
+        System.out.println("Su promedio es de: "+promedio);
         System.out.println("Su ISV es de : "+isv);
         System.out.println("Su total es de: "+total);
 }
