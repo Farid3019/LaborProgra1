@@ -5,16 +5,19 @@ import java.util.Random;
 public class Jorge_Flores_Estructura {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-       
+        int menu = 0;
+         int contadormenu = 0;
+       while (true){
+         
         System.out.println("Menu");
         System.out.println("1. Palabras Al Revez");
         System.out.println("2. Numero Perfecto");
         System.out.println("3. Primos");
         System.out.println("4. Votaciones");
         System.out.println("5. Salir");
-        
-        int menu = sc.nextInt();
-        
+        menu = sc.nextInt();
+  
+       
         switch (menu){
             case 1: 
                 System.out.println("Ingrese su palabra: ");
@@ -44,6 +47,7 @@ public class Jorge_Flores_Estructura {
                 }
                 break;
             case 3:
+                contadormenu++;
                Random ran = new Random();
              int num = ran.nextInt(100)+1;
              int contador = 0;
@@ -65,7 +69,15 @@ public class Jorge_Flores_Estructura {
                     System.out.println(num+ " no es primo porque tiene "+contador+" divisores");
                 }
                 System.out.println("Divisores de "+num+" son "+sbdivisores);
+                break;
+            case 4:
+               break; 
+            case 5:
+                System.out.println("Se hicieron "+contadormenu+ " procesos");  
+                System.out.println("Saliendo...");
+                System.exit(1);
         }
         }    
     }
   
+}
