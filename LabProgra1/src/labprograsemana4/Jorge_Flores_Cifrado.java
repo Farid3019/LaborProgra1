@@ -1,13 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package labprograsemana4;
 
-/**
- *
- * @author jfflo
- */
+import java.util.Scanner;
 public class Jorge_Flores_Cifrado {
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String abecedario;
+        abecedario = " abcdefghijklmnñopqrstuvwxyz";
+        System.out.println("Porfavor ingrese una palabra");
+        String palabra = sc.next();
+        System.out.println("Ingrese el desplazamiento que desee");
+        int espacios = sc.nextInt();
+        
+    }
+          
 }
