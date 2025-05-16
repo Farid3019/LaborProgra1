@@ -9,5 +9,7 @@ package labprograsemana4;
  * @author jfflo
  */
 public class Flores_Jorge_Codigoenigma {
-    
+    public static void main(String[] args) {
+        
+    }
 }
