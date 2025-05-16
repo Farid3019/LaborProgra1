@@ -10,7 +10,7 @@ public class Jorge_Flores_Cifrado {
         System.out.println("Porfavor ingrese una palabra");
         String palabra = sc.next();
         System.out.println("Ingrese el desplazamiento que desee");
-        int espacios = sc.nextInt();
+        int espacios = sc.nextInt();defsdfsfsdf
         
     }
           
