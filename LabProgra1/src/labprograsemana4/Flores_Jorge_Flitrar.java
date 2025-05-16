@@ -16,7 +16,7 @@ public class Flores_Jorge_Flitrar {
         // Paso 2: Solicitar la longitud mínima
         System.out.print("Ingrese una longitud mínima (entero positivo): ");
         int longitudMinima = scanner.nextInt();
-        scanner.nextLine(); // limpiar el buffer
+        scanner.nextLine(); 
 
         // Paso 3: Eliminar signos de puntuación
         frase = frase.replaceAll("[^a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\\s]", "");
