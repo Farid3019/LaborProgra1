@@ -1,7 +1,7 @@
 package labprograsemana4;
 
 import java.util.Scanner;
-public class EjercicioSemana4 {
+public class Jorge_Flores_EjercicioCompleto {
     public static void main(String[] args) {
         Scanner ejer = new Scanner (System.in);
         while (true){

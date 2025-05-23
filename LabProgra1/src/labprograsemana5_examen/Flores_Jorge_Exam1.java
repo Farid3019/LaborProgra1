@@ -15,7 +15,23 @@ public class Flores_Jorge_Exam1 {
         System.out.println("5. Salir");
         int opciones = sc.nextInt();
         switch (opciones) {
-            case 1: 
+            case 1:
+                System.out.println("Porfavor ingrese la cantidad de filas de la piramide");
+        int filas = sc.nextInt();
+        int numerofila = 1;
+        int cantidad = 1;
+
+        for (int i = 1; i <= filas; i++) {
+            int suma = 0;
+            for (int j = 0; j < cantidad; j++) {
+                System.out.print(numerofila + " ");
+                suma += numerofila;
+                numerofila += 2;
+            }
+
+            System.out.println(" = " + suma);
+            cantidad++;
+        }
                 break;
             case 2: 
                 break;
