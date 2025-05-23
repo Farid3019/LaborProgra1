@@ -66,11 +66,39 @@ public class Flores_Jorge_Exam1 {
         }
                 
             case 4:
-                break;
-            case 5:
-                System.out.println("Saliendo...");
-                System.exit(1);
+                System.out.println("Generando numero...");
+                int numero = random.nextInt(100)+1;
+                int contadorintento = 10;
+                if(contadorintento == 0){
+                    System.out.println("Intentos acabados, el numero a adivinar era "+numero);
+                }
+                System.out.println("Numero generado, tiene 10 intentos, adivine!");
+                int contador = 0;
+                while(true){
+                int numerousuario = sc.nextInt();
+                if(numerousuario != numero){
+                    contadorintento--;
+                }
+                if(contadorintento <= 0){
+                    System.out.println("Intentos acabados, el numero a adivinar era "+numero);
+                    break;
+                }
+                if (numerousuario < numero){
+                    System.out.println("El numero es mayor, tiene "+contadorintento+ " intentos");
+                    contador++;
+                }
+                if (numerousuario > numero){
+                    System.out.println("El numero es menor, tiene "+contadorintento+ " intentos"); 
+                    contador++;
+                }
+                if(numerousuario == numero){
+                    System.out.println("Adivino!");
+                    System.out.println("Adivino en "+contador+" intentos");
+                    break;
+                }
         }
         }       
     }
+    }
 }
+
