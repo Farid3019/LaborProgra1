@@ -34,6 +34,25 @@ public class Flores_Jorge_Exam1 {
         }
                 break;
             case 2: 
+                System.out.println("Ingrese el texto a cifrar o descifrar:");
+        String mensaje = sc.next();
+        String resultado = "";
+
+        for (int i = 0; i < mensaje.length(); i++) {
+            char c = mensaje.charAt(i);
+            if (c >= 'a' && c <= 'z') {
+                resultado += (char) ('z' - (c - 'a'));
+            }
+            else if (c >= 'A' && c <= 'Z') {
+                resultado += (char) ('Z' - (c - 'A'));
+            }
+            else {
+                resultado += c;
+            }
+        }
+
+        System.out.println("Mensaje transformado:");
+        System.out.println(resultado);
                 break;
             case 3:
                 while (true){
@@ -113,6 +132,9 @@ public class Flores_Jorge_Exam1 {
                     break;
                 }
         }
+            case 5:
+                System.out.println("Saliendo...");
+                System.exit(1);
         }       
     }
     }
